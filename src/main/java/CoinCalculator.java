@@ -6,14 +6,16 @@
 public class CoinCalculator {
 
 
-    public String calculateChange(String amountOfChange) {
-        Integer change = Integer.parseInt(amountOfChange.substring(amountOfChange.length() - 2));
-        if(change > 9) {
-            return "1 dime";
-        } else if (change > 0) {
-            return "1 penny";
-        } else {
-            return "No coins returned";
+    public int calculateChange(String amountOfChange) {
+        int change = (int) (Double.parseDouble(amountOfChange.substring(1)) * 100.0);
+        int ccount = 0;
+        int[] coinvals = {100, 25, 10, 5, 1};
+        for (int val : coinvals) {
+            if (change >= val) {
+                ccount += change/val;
+                change = change%val;
+            }
         }
+        return ccount;
     }
 }

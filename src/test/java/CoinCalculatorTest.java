@@ -13,27 +13,27 @@ public class CoinCalculatorTest {
     public void zeroChangeMeansYouGetZeroCoins() {
         CoinCalculator coinCalculator = new CoinCalculator();
 
-        String coinMessage = coinCalculator.calculateChange("$3.00");
+        int coinMessage = coinCalculator.calculateChange("$3.00");
 
-        assertEquals("No coins returned", coinMessage);
+        assertEquals(3, coinMessage);
     }
 
     @Test
     public void oneCentShouldGiveYouOnePenny() {
         CoinCalculator coinCalculator = new CoinCalculator();
 
-        String coinMessage = coinCalculator.calculateChange("$0.01");
+        int coinMessage = coinCalculator.calculateChange("$0.01");
 
-        assertEquals("1 penny", coinMessage);
+        assertEquals(1, coinMessage);
     }
 
     @Test
     public void tenCentsShouldGiveYouOneDime() {
         CoinCalculator coinCalculator = new CoinCalculator();
 
-        String coinMessage = coinCalculator.calculateChange("$0.10");
+        int coinMessage = coinCalculator.calculateChange("$0.10");
 
-        assertEquals("1 dime", coinMessage);
+        assertEquals(1, coinMessage);
     }
 
 }
