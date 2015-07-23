@@ -3,9 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * User: mpmenne
- * Date: 6/18/14
- * Time: 3:28 AM
+ * Daniel Jackson
  */
 public class CoinCalculatorTest {
 

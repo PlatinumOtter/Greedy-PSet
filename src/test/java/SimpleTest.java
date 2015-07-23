@@ -3,9 +3,7 @@ import org.junit.Test;
 import static junit.framework.Assert.assertEquals;
 
 /**
- * User: mpmenne
- * Date: 6/18/14
- * Time: 3:13 AM
+ * Daniel Jackson
  */
 public class SimpleTest {
 
