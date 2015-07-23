@@ -1,7 +1,5 @@
 /**
- * User: mpmenne
- * Date: 6/18/14
- * Time: 3:06 AM
+ * Daniel Jackson
  */
 public class CoinCalculator {
 

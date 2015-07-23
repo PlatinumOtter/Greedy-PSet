@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
 /**
- * User: mpmenne
- * Date: 6/18/14
- * Time: 3:05 AM
+ * Daniel Jackson
  */
 public class Greedy {
 
