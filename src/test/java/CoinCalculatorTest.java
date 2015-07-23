@@ -36,4 +36,31 @@ public class CoinCalculatorTest {
         assertEquals(1, coinMessage);
     }
 
+    @Test
+    public void euroCoins() {
+        CoinCalculator cc = new CoinCalculator();
+
+        int coins = cc.calculateChange("€5.00");
+
+        assertEquals(3, coins);
+    }
+
+    @Test
+    public void euroCoins2() {
+        CoinCalculator cc = new CoinCalculator();
+
+        int coins = cc.calculateChange("€0.35");
+
+        assertEquals(3, coins);
+    }
+
+    @Test
+    public void euroCoins3() {
+        CoinCalculator cc = new CoinCalculator();
+
+        int coins = cc.calculateChange("€3.11");
+
+        assertEquals(4, coins);
+    }
+
 }
